@@ -1,0 +1,27 @@
+.neon_rainbow{
+  position: relative;
+  padding: 16px 36px;
+  color: white;
+  background: #0b0b0b;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.neon_rainbow::before{
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: inherit;
+  background: linear-gradient(90deg, red, orange, yellow, lime, cyan, blue, violet, red);
+  background-size: 400%;
+  filter: blur(8px);
+  animation: move 6s linear infinite;
+  z-index: -1;
+}
+
+@keyframes move{
+  to{ background-position: 400%; }
+}

@@ -1,0 +1,15 @@
+.glass_btn{
+  padding: 16px 36px;
+  border-radius: 14px;
+  color: white;
+  font-weight: bold;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  border: 2px solid transparent;
+  background-image:
+    linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)),
+    linear-gradient(90deg, #ff00cc, #3333ff);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  cursor: pointer;
+}

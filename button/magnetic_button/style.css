@@ -1,0 +1,14 @@
+.magnetic_btn{
+  padding: 16px 40px;
+  border-radius: 999px;
+  border: none;
+  background: #6366f1;
+  color: white;
+  font-weight: bold;
+  transition: transform .3s;
+  cursor: pointer;
+}
+
+.magnetic_btn:hover{
+  transform: scale(1.08);
+}

@@ -1,0 +1,15 @@
+.tw_btn{
+  padding: 12px 28px;
+  border-radius: 999px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  background: linear-gradient(135deg,#6366f1,#ec4899);
+  box-shadow: 0 10px 20px rgba(0,0,0,.25);
+  transition: transform .2s;
+  cursor: pointer;
+}
+
+.tw_btn:hover{
+  transform: translateY(-2px);
+}

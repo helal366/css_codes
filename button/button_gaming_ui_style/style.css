@@ -1,0 +1,12 @@
+.gaming_btn{
+  padding: 16px 40px;
+  font-weight: bold;
+  color: #00f7ff;
+  background: #020617;
+  border: 2px solid #00f7ff;
+  text-shadow: 0 0 10px #00f7ff;
+  box-shadow: 0 0 20px #00f7ff inset, 0 0 20px #00f7ff;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}

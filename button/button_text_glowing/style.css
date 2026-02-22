@@ -1,6 +1,4 @@
-.btn_div{
-    padding: 50px;
-}
+
 .glow_button{
     padding: 10px 16px;
     background: #07182E;
@@ -36,30 +34,3 @@
     0%{ background-position: 0%; }
     100%{ background-position: 300%; }
 }
-/* .glow_button::before{
-    content: "";
-    position: absolute;
-    width: 120%;
-    height: 80%;
-    background: linear-gradient(90deg, #fff700, #09fce3);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: rotate 5s linear infinite;
-    z-index: -1;
-}
-@keyframes rotate{
-    from{
-        transform: translate(-50%, -50%) rotate(0deg);
-    }
-    to{
-        transform: translate(-50%, -50%) rotate(360deg);
-    }
-}
-.glow_button::after{
-    content: "";
-    position: absolute;
-    background: #07182E;
-    inset: 3px;
-    z-index: 1;
-} */

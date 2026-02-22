@@ -1,0 +1,14 @@
+.hover_anim{
+  padding: 14px 30px;
+  border: none;
+  border-radius: 8px;
+  background: #1f2937;
+  color: white;
+  font-weight: bold;
+  transition: transform .3s, box-shadow .3s;
+}
+
+.hover_anim:hover{
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0,0,0,.5);
+}

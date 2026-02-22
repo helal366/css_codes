@@ -1,0 +1,18 @@
+.btn3d{
+  padding: 16px 36px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 6px #1e40af;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.btn3d:hover{
+    transform: scale(1.03);
+}
+.btn3d:active{
+  transform: translateY(6px);
+  box-shadow: 0 0 #1e40af;
+}
