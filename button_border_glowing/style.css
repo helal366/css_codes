@@ -1,0 +1,49 @@
+div{
+    padding: 50px;
+}
+.glow_button{
+    padding: 10px 16px;
+    background: #07182E;
+    color: #fff;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    border: none;
+    z-index: 1;
+    overflow: hidden;
+}
+.button_text{
+    position: relative;
+    z-index: 2;
+}
+.glow_button::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 70%;
+    background: linear-gradient(90deg, #00b7ff, #ff30ff);
+    top: 50%;
+    left: 50%;
+    /* #e654de */
+    /* #4858FE */
+    transform: translate(-50%, -50%);
+    animation: rotate 10s linear infinite;
+    z-index: -1;
+}
+@keyframes rotate{
+    from{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+.glow_button::after{
+    content: "";
+    position: absolute;
+    background: #07182E;
+    inset: 3px;
+    z-index: 1;
+}
