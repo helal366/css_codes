@@ -22,27 +22,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.button_text2{
-    position: relative;
-    z-index: 2;
-    background: linear-gradient(
-        90deg,
-        #00b7ff,
-        #ff30ff,
-        #00ff88,
-        #00b7ff
-    );
-    background-size: 300%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 
-    animation: gradientMove 4s linear infinite;
-}
-@keyframes gradientMove{
-    0%{ background-position: 0%; }
-    100%{ background-position: 300%; }
-}
 .glow_button::before{
     content: "";
     position: absolute;
@@ -69,6 +49,6 @@
     content: "";
     position: absolute;
     background: #07182E;
-    inset: 3px;
+    inset: 2px;
     z-index: 1;
 }
