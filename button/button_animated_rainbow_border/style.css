@@ -1,0 +1,66 @@
+body{
+  background: #0f172a;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Button */
+.rainbow_btn{
+  position: relative;
+  padding: 16px 40px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  background: #0f172a;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.rainbow_btn:hover{
+    transform: scale(1.02);
+}
+/* Animated rainbow border */
+.rainbow_btn::before{
+  content: "";
+  position: absolute;
+  inset: -3px;                 /* border thickness */
+  border-radius: inherit;
+
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    lime,
+    cyan,
+    blue,
+    violet,
+    red
+  );
+
+  background-size: 400%;
+  animation: rainbowMove 6s linear infinite;
+  z-index: -1;
+}
+
+/* Inner background (keeps center dark) */
+.rainbow_btn::after{
+  content: "";
+  position: absolute;
+  inset: 3px;                  /* matches border thickness */
+  background: #0f172a;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+/* Animation */
+@keyframes rainbowMove{
+  from { background-position: 0%; }
+  to   { background-position: 400%; }
+}
